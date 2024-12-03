@@ -4069,7 +4069,7 @@ static bool update_props() {
     level_oomadj[VMPRESS_LEVEL_MEDIUM] =
         GET_LMK_PROPERTY(int32, "medium", 800);
     level_oomadj[VMPRESS_LEVEL_CRITICAL] =
-        GET_LMK_PROPERTY(int32, "critical", 606);
+        GET_LMK_PROPERTY(int32, "critical", 701);
     debug_process_killing = GET_LMK_PROPERTY(bool, "debug", false);
 
     /* By default disable upgrade/downgrade logic */
