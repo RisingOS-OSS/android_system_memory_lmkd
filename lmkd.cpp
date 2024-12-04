@@ -4080,7 +4080,7 @@ static bool update_props() {
     downgrade_pressure =
         (int64_t)GET_LMK_PROPERTY(int32, "downgrade_pressure", 100);
     kill_heaviest_task =
-        GET_LMK_PROPERTY(bool, "kill_heaviest_task", false);
+        GET_LMK_PROPERTY(bool, "kill_heaviest_task", true);
     low_ram_device = property_get_bool("ro.config.low_ram", false);
     kill_timeout_ms =
         (unsigned long)GET_LMK_PROPERTY(int32, "kill_timeout_ms", 100);
