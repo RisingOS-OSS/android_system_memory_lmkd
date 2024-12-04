@@ -4104,7 +4104,7 @@ static bool update_props() {
     thrashing_critical_pct = std::max(
             0, GET_LMK_PROPERTY(int32, "thrashing_limit_critical", thrashing_limit_pct * 3));
     swap_util_max = clamp(0, 100, GET_LMK_PROPERTY(int32, "swap_util_max", 95));
-    filecache_min_kb = GET_LMK_PROPERTY(int64, "filecache_min_kb", 0);
+    filecache_min_kb = GET_LMK_PROPERTY(int64, "filecache_min_kb", 153600);
     stall_limit_critical = GET_LMK_PROPERTY(int64, "stall_limit_critical", 100);
     delay_monitors_until_boot = GET_LMK_PROPERTY(bool, "delay_monitors_until_boot", false);
     direct_reclaim_threshold_ms =
