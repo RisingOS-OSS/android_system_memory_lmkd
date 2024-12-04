@@ -4083,7 +4083,7 @@ static bool update_props() {
         GET_LMK_PROPERTY(bool, "kill_heaviest_task", true);
     low_ram_device = property_get_bool("ro.config.low_ram", false);
     kill_timeout_ms =
-        (unsigned long)GET_LMK_PROPERTY(int32, "kill_timeout_ms", 100);
+        (unsigned long)GET_LMK_PROPERTY(int32, "kill_timeout_ms", 50);
     pressure_after_kill_min_score =
         (unsigned long)GET_LMK_PROPERTY(int32, "pressure_after_kill_min_score", PERCEPTIBLE_RECENT_FOREGROUND_APP_ADJ);
     use_minfree_levels =
